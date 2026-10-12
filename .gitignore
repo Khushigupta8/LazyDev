@@ -12,3 +12,6 @@ data/*.tmp
 /*.png
 /*.jpeg
 /*.jpg
+
+.vercel
+.env*
