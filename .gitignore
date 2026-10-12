@@ -1,0 +1,14 @@
+node_modules
+.next
+.vercel
+.env*.local
+
+# Local database & backups (live data lives in Upstash Redis on Vercel)
+data/db.json
+data/*.backup-*.json
+data/*.tmp
+
+# Original photo files kept on your computer only
+/*.png
+/*.jpeg
+/*.jpg

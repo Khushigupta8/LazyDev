@@ -1,0 +1,426 @@
+{
+  "settings": {
+    "ownerName": "Khushi Gupta",
+    "ownerRole": "Web Designer & Developer",
+    "photo": "/uploads/khushi-professional.jpg",
+    "quote": "Design is not just what it looks like. It is how it makes your customers feel.",
+    "highlights": [
+      {
+        "title": "Fixed, transparent pricing",
+        "text": "You know the full cost before any work begins."
+      },
+      {
+        "title": "Launch in 2 to 3 weeks",
+        "text": "Most business websites go live within a month."
+      },
+      {
+        "title": "Mobile-first & SEO-ready",
+        "text": "Fast on every phone and ready for Google."
+      },
+      {
+        "title": "Support after launch",
+        "text": "Updates, fixes and changes whenever you need them."
+      }
+    ],
+    "brandName": "LazyDev",
+    "heroKicker": "crafting prettier experiences",
+    "heroWord": "WEBSITES",
+    "heroTagline": "No fuss, no tech headaches.",
+    "heroSubtitle": "Dreamy, fast and conversion-ready websites for brands that want to stand out. You stay lazy, we do the heavy lifting.",
+    "ctaLabel": "Start your project",
+    "availability": "Booking new projects",
+    "email": "devkhushii08@gmail.com",
+    "phone": "+91 74175 59509",
+    "whatsapp": "",
+    "location": "India · Working worldwide",
+    "instagram": "",
+    "linkedin": "",
+    "behance": "",
+    "stats": [
+      {
+        "value": "25+",
+        "label": "Websites launched"
+      },
+      {
+        "value": "98%",
+        "label": "Happy clients"
+      },
+      {
+        "value": "2 wks",
+        "label": "Average delivery"
+      },
+      {
+        "value": "24/7",
+        "label": "Care & support"
+      }
+    ]
+  },
+  "services": [
+    {
+      "id": "53158e2cabb4d6d5",
+      "title": "Website Design",
+      "tag": "Design",
+      "icon": "sparkle",
+      "status": "active",
+      "order": 1,
+      "description": "Beautiful, on-brand designs that feel premium on every screen.",
+      "features": [
+        "Custom UI",
+        "Figma prototypes",
+        "Brand-matched"
+      ],
+      "price": "From ₹15,000"
+    },
+    {
+      "id": "407c7619ead3f2e9",
+      "title": "Website Development",
+      "tag": "Development",
+      "icon": "code",
+      "status": "active",
+      "order": 2,
+      "description": "Lightning-fast, SEO-ready sites built with modern tech like Next.js & WordPress.",
+      "features": [
+        "Responsive",
+        "SEO-ready",
+        "CMS editing"
+      ],
+      "price": "From ₹20,000"
+    },
+    {
+      "id": "06fa6bb4cdc7ccc8",
+      "title": "E-commerce Stores",
+      "tag": "Delivery",
+      "icon": "cart",
+      "status": "active",
+      "order": 3,
+      "description": "Shopify, WooCommerce or custom stores with a checkout your customers will love.",
+      "features": [
+        "Payments",
+        "Inventory",
+        "Fast checkout"
+      ],
+      "price": "From ₹35,000"
+    },
+    {
+      "id": "fa4a7917738a4868",
+      "title": "Care & Maintenance",
+      "tag": "Deployment",
+      "icon": "heart",
+      "status": "active",
+      "order": 4,
+      "description": "Hosting, updates, backups and small changes: the smarter way to stay online.",
+      "features": [
+        "Hosting",
+        "Backups",
+        "Monthly updates"
+      ],
+      "price": "From ₹2,000/mo"
+    },
+    {
+      "id": "6175d52d075d4d6f",
+      "title": "Graphic Design",
+      "tag": "Coming soon",
+      "icon": "pen",
+      "status": "coming-soon",
+      "order": 5,
+      "description": "Logos, brand kits and scroll-stopping social creatives.",
+      "features": [
+        "Logo & identity",
+        "Social kits"
+      ],
+      "price": ""
+    },
+    {
+      "id": "b77e106bc359e902",
+      "title": "Digital Marketing",
+      "tag": "Coming soon",
+      "icon": "megaphone",
+      "status": "coming-soon",
+      "order": 6,
+      "description": "SEO, ads and social growth to bring the right people to your site.",
+      "features": [
+        "SEO",
+        "Meta & Google Ads"
+      ],
+      "price": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "c17875be2508d18b",
+      "client": "DD Auto Management",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 1,
+      "title": "Dealer Review",
+      "category": "Full Stack / Custom",
+      "url": "https://www.ddautomanagement.com/",
+      "image": "/uploads/work-dealer-review.jpg",
+      "featured": true,
+      "description": "An invitation-only vehicle assessment platform for car dealerships. Dealers submit vehicle details, photos and a condition rating through a private portal, and the review team returns a recommended listing price with a branded report. Includes a dealership workspace that tracks every submission, plus membership and billing.",
+      "tags": [
+        "Custom build",
+        "Dealer portal",
+        "Membership & billing"
+      ]
+    },
+    {
+      "id": "250fdc8872d315c1",
+      "client": "Centauri Renewables",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 2,
+      "title": "Centauri Renewables",
+      "category": "Full Stack / Custom",
+      "url": "https://centauri-renewables.com/",
+      "image": "/uploads/work-centauri.jpg",
+      "featured": false,
+      "description": "Corporate website for a U.S. renewable energy company working on selenium solar technology, battery storage and AI-driven energy systems, with a project map, governance pages and dedicated investor and partnership sections.",
+      "tags": [
+        "Corporate site",
+        "Investor relations",
+        "Project map"
+      ]
+    },
+    {
+      "id": "53c6d5338c59ef5e",
+      "client": "New Leaf Listings",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 3,
+      "title": "New Leaf Listings",
+      "category": "Full Stack / Custom",
+      "url": "https://nlvlistings.com/",
+      "image": "/uploads/work-new-leaf-listings.jpg",
+      "featured": false,
+      "description": "A premium real estate platform built for elite brokerages: curated property listings, map search, pricing plans for realtors, agent contact and a built-in chat assistant.",
+      "tags": [
+        "Real estate platform",
+        "Listings & map",
+        "Realtor plans"
+      ]
+    },
+    {
+      "id": "dffa8b3d8d46b39c",
+      "client": "FormFit",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 4,
+      "title": "FormFit",
+      "category": "Full Stack / Custom",
+      "url": "https://formfit.in/",
+      "image": "/uploads/work-formfit.jpg",
+      "featured": false,
+      "description": "A free fitness platform with 18 calculators (calories, BMI, body fat, macros, one-rep max and more), alongside workout plans, an exercise library and research-based guides. Every calculation runs privately in the browser, with no sign-up.",
+      "tags": [
+        "Web app",
+        "18 calculators",
+        "SEO content"
+      ]
+    },
+    {
+      "id": "0e6a7cec8069e4d0",
+      "client": "JRICO Entertainment",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 5,
+      "title": "JRICO Entertainment",
+      "category": "WordPress",
+      "url": "https://darkorange-bear-997132.hostingersite.com/",
+      "image": "/uploads/work-jrico.jpg",
+      "featured": true,
+      "description": "Website for a New Orleans and Metairie DJ company, with services, packages, a gallery and an online booking and quote flow for weddings, corporate events and private parties.",
+      "tags": [
+        "WordPress",
+        "Elementor",
+        "Booking & quotes"
+      ]
+    },
+    {
+      "id": "1b286bf2c401b585",
+      "client": "BKG",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 6,
+      "title": "The Beneficial Knowledge Group",
+      "category": "WordPress",
+      "url": "https://linen-gerbil-492154.hostingersite.com/",
+      "image": "/uploads/work-bkg.jpg",
+      "featured": false,
+      "description": "Website for a Massachusetts consulting, professional training and staffing firm, with service pages, online courses, a member dashboard and multilingual support.",
+      "tags": [
+        "WordPress",
+        "Online courses",
+        "Multilingual"
+      ]
+    },
+    {
+      "id": "80a36fbea089d7f4",
+      "client": "Blackburn Hawks",
+      "year": "",
+      "hidden": false,
+      "createdAt": "2026-10-12T18:35:51.341Z",
+      "order": 7,
+      "title": "Blackburn Hawks",
+      "category": "WordPress",
+      "url": "https://bisque-falcon-806636.hostingersite.com/",
+      "image": "/uploads/work-blackburn-hawks.jpg",
+      "featured": true,
+      "description": "Official website for an English ice hockey club: season tickets, away-travel seats, fixtures with a live countdown, team news, sponsorship packages and a club shop on the way.",
+      "tags": [
+        "WordPress",
+        "Tickets",
+        "Fixtures"
+      ]
+    },
+    {
+      "id": "86d9559ed4723731",
+      "category": "Full Stack / Custom",
+      "year": "",
+      "featured": false,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 8,
+      "title": "Nothing",
+      "client": "Nothing",
+      "url": "https://nothing.tech/",
+      "image": "/uploads/work-nothing.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. E-commerce and brand website for Nothing, the London-based consumer tech company: product launches, online store and seasonal offers.",
+      "tags": [
+        "E-commerce",
+        "UK"
+      ]
+    },
+    {
+      "id": "7ed09711b4400f49",
+      "category": "Full Stack / Custom",
+      "year": "",
+      "featured": false,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 9,
+      "title": "Graza",
+      "client": "Graza",
+      "url": "https://www.graza.co/",
+      "image": "/uploads/work-graza.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. Direct-to-consumer store for Graza, the olive oil brand: shop, refills and brand storytelling.",
+      "tags": [
+        "DTC store",
+        "USA"
+      ]
+    },
+    {
+      "id": "42f73ba5b55b7757",
+      "category": "Full Stack / Custom",
+      "year": "",
+      "featured": true,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 10,
+      "title": "Jacquemus",
+      "client": "Jacquemus",
+      "url": "https://www.jacquemus.com/en_in",
+      "image": "/uploads/work-jacquemus.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. Online store for the French fashion house Jacquemus: collections, bags and campaign-led editorial.",
+      "tags": [
+        "Fashion e-commerce",
+        "France"
+      ]
+    },
+    {
+      "id": "e4038d2e9ff42ea8",
+      "category": "Full Stack / Custom",
+      "year": "",
+      "featured": false,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 11,
+      "title": "The Modern House",
+      "client": "The Modern House",
+      "url": "https://themodernhouse.com/",
+      "image": "/uploads/work-modern-house.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. Website for The Modern House, the UK estate agency for design-led homes: sales listings, journal and property alerts.",
+      "tags": [
+        "Real estate",
+        "UK"
+      ]
+    },
+    {
+      "id": "007a5b1b66e38b4c",
+      "category": "WordPress",
+      "year": "",
+      "featured": false,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 12,
+      "title": "noma",
+      "client": "noma",
+      "url": "https://noma.dk/",
+      "image": "/uploads/work-noma.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. Website for noma in Copenhagen: reservations, bilingual English/Danish content and newsletter sign-up.",
+      "tags": [
+        "WordPress",
+        "Denmark"
+      ]
+    },
+    {
+      "id": "455998d5b5936126",
+      "category": "WordPress",
+      "year": "",
+      "featured": true,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 13,
+      "title": "The Noguchi Museum",
+      "client": "The Noguchi Museum",
+      "url": "https://www.noguchi.org/",
+      "image": "/uploads/work-noguchi.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. Website for The Noguchi Museum in New York: visitor information, artworks, Akari & Shop, in English and Japanese.",
+      "tags": [
+        "WordPress",
+        "USA"
+      ]
+    },
+    {
+      "id": "77b3ac75af545773",
+      "category": "WordPress",
+      "year": "",
+      "featured": false,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 14,
+      "title": "Around The Blue",
+      "client": "AroundTheBlue",
+      "url": "https://aroundtheblue.org/it/",
+      "image": "/uploads/work-around-the-blue.jpg",
+      "description": "Agency project, worked on with the Digital Heroes team. Expedition website for Giovanni Soldini's AroundTheBlue voyage: 21 stages across seven seas, ocean stories, the mission and partners.",
+      "tags": [
+        "WordPress",
+        "Italy"
+      ]
+    },
+    {
+      "id": "94a85e53cc3c2046",
+      "category": "WordPress",
+      "year": "",
+      "featured": false,
+      "hidden": false,
+      "createdAt": "2026-10-12T19:34:14.395Z",
+      "order": 15,
+      "title": "Now New Next",
+      "client": "Fuego Camina Conmigo",
+      "url": "https://nownewnext.fuegocaminaconmigo.com/",
+      "image": "",
+      "description": "Agency project, worked on with the Digital Heroes team. Campaign microsite for Fuego Camina Conmigo.",
+      "tags": [
+        "WordPress"
+      ]
+    }
+  ]
+}
