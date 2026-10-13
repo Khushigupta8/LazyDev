@@ -51,7 +51,6 @@ export default function Services() {
                 <strong>{s.title}</strong>
                 <span>{s.description}</span>
               </div>
-              <span className="adm-svc-price">{s.price || '-'}</span>
               <select value={s.status} onChange={(e) => quickStatus(s, e.target.value)} aria-label="Status">
                 {Object.entries(STATUS_LABEL).map(([k, v]) => (
                   <option key={k} value={k}>{v}</option>
@@ -120,8 +119,7 @@ function ServiceForm({ initial, onClose, onSaved }) {
         </div>
         <label>Short description<textarea rows={3} value={s.description} onChange={set('description')} /></label>
         <label>Features (comma separated)<input value={s.features} onChange={set('features')} placeholder="Logo design, Brand kit, Social posts" /></label>
-        <div className="adm-form-grid three">
-          <label>Price text<input value={s.price} onChange={set('price')} placeholder="From ₹5,000" /></label>
+        <div className="adm-form-grid">
           <label>
             Status
             <select value={s.status} onChange={set('status')}>

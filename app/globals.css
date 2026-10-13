@@ -190,7 +190,7 @@ p { margin: 0 0 1em; }
 .svc-icon { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--rose); color: var(--rose); }
 .svc-list h3, .hl-list h3 { margin: 4px 0 6px; font: 600 0.78rem var(--font-sans); letter-spacing: 0.2em; text-transform: uppercase; color: var(--wine); }
 .svc-list p, .hl-list p { margin: 0; font-size: 0.92rem; color: var(--muted); }
-.svc-list .svc-price { margin-top: 6px; font-size: 0.78rem; letter-spacing: 0.1em; color: var(--rose); }
+.svc-note { margin: 22px 0 0; padding-left: 18px; border-left: 1px solid var(--rose); max-width: 460px; font-size: 0.92rem; color: var(--muted); }
 .svc-list .soon { opacity: 0.75; }
 .svc-list .soon em { margin-left: 8px; font: 400 0.95rem var(--font-script); letter-spacing: 0; text-transform: none; color: var(--rose); }
 .laurel { color: var(--rose); display: grid; place-items: center; }

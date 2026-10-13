@@ -82,7 +82,7 @@ export default function Enquiries({ onChange }) {
                 <tr>
                   <th>Name</th>
                   <th>Service</th>
-                  <th>Budget</th>
+                  <th>Website type</th>
                   <th>Status</th>
                   <th>Received</th>
                 </tr>
@@ -123,7 +123,7 @@ function Detail({ e, onClose, update, remove }) {
           <Field label="Phone" value={e.phone || '-'} />
           <Field label="Company" value={e.company || '-'} />
           <Field label="Service" value={e.service || '-'} />
-          <Field label="Budget" value={e.budget || '-'} />
+          <Field label="Website type" value={e.budget || '-'} />
           <Field label="Timeline" value={e.timeline || '-'} />
           <Field label="Received" value={fmtDate(e.createdAt, true)} />
           <Field

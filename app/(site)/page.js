@@ -15,7 +15,7 @@ const STEPS = [
 ];
 
 const FAQS = [
-  ['How much does a website cost?', 'It depends on what you need. Starting prices are listed with each service. After a short call you receive a fixed, transparent quote with no hidden costs.'],
+  ['How much does a website cost?', 'It depends on the kind of website you want: the number of pages, features like online payments or bookings, and how custom the design is. After a short call you receive a fixed, transparent quote with no hidden costs.'],
   ['How long does it take?', 'Most business websites launch in two to three weeks. Online stores and larger projects usually take four to eight.'],
   ['Can I update the website myself?', 'Yes. I build on easy-to-use platforms or include a simple admin panel, and walk you through it before handover.'],
   ['Do you handle hosting, domains and maintenance?', 'I can set up hosting and your domain, and offer monthly care plans for updates, backups and small changes.'],
@@ -114,7 +114,6 @@ export default async function HomePage() {
                   <div>
                     <h3>{s.title}</h3>
                     <p>{s.description}</p>
-                    {s.price && <p className="svc-price">{s.price}</p>}
                   </div>
                 </li>
               ))}
@@ -132,6 +131,9 @@ export default async function HomePage() {
                 </li>
               ))}
             </ul>
+            <p className="svc-note">
+              Pricing depends on the kind of website you want. Share your idea and you&apos;ll get a fixed quote after a short call.
+            </p>
           </div>
 
           {highlights.length > 0 && (

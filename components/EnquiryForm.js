@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Icon from './Icon';
 
-const BUDGETS = ['Under ₹15,000', '₹15,000 to ₹40,000', '₹40,000 to ₹1,00,000', '₹1,00,000+', 'Not sure yet'];
+const WEBSITE_TYPES = ['One-page website', 'Business website (multi-page)', 'Online store', 'Custom web app', 'Not sure yet'];
 const TIMELINES = ['ASAP', 'Within a month', '1 to 3 months', 'Just exploring'];
 
 export default function EnquiryForm({ services }) {
@@ -86,10 +86,11 @@ export default function EnquiryForm({ services }) {
       </label>
       <div className="row2">
         <label>
-          Budget
+          Website type
+          {/* Stored in the `budget` field so older enquiries keep working */}
           <select name="budget" defaultValue="">
-            <option value="">Select a range</option>
-            {BUDGETS.map((b) => (
+            <option value="">Select a type</option>
+            {WEBSITE_TYPES.map((b) => (
               <option key={b}>{b}</option>
             ))}
           </select>
