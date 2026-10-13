@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import Icon from '../Icon';
+import { Divider } from '../Ornament';
 import Dashboard from './Dashboard';
 import Enquiries from './Enquiries';
 import Projects from './Projects';
@@ -38,10 +39,9 @@ function Login({ onDone }) {
   return (
     <div className="adm-login">
       <form className="adm-login-card" onSubmit={submit}>
-        <span className="adm-logo-mark big">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/icon.png" alt="" />
-        </span>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="adm-login-logo" src="/brand/logo-full.webp" alt="Khushii Labs" width={1000} height={485} />
+        <Divider />
         <h1>Welcome back</h1>
         <p className="adm-muted">Sign in to manage your website</p>
         <label>
@@ -121,14 +121,9 @@ export default function AdminApp() {
     <div className={'adm' + (menuOpen ? ' menu-open' : '')}>
       <aside className="adm-side">
         <div className="adm-brand">
-          <span className="adm-logo-mark">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/brand/icon.png" alt="" />
-          </span>
-          <div>
-            <strong>LazyDev</strong>
-            <small>Admin panel</small>
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/brand/logo-nav.webp" alt="Khushii Labs" width={480} height={210} />
+          <small>Admin panel</small>
         </div>
         <nav className="adm-nav">
           {TABS.map((t) => (

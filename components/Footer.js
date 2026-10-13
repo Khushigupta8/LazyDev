@@ -10,7 +10,7 @@ export default function Footer({ settings, projects = [] }) {
       <div className="footer-brand">
         <Link href="/" aria-label={settings.brandName + ' home'}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-full.webp" alt={`${settings.brandName}: websites, brands, ideas, real impact`} width={1000} height={573} loading="lazy" />
+          <img src="/brand/logo-full.webp" alt={`${settings.brandName}: websites, brands, ideas, real impact`} width={1000} height={485} loading="lazy" />
         </Link>
       </div>
       {live.length > 0 && (

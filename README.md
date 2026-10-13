@@ -1,4 +1,4 @@
-# LazyDev — agency website + admin panel (Next.js)
+# Khushii Labs — agency website + admin panel (Next.js)
 
 ## Run it
 ```bash

@@ -30,7 +30,7 @@ export default function Nav({ brandName }) {
       <div className="container nav-inner">
         <Link href="/" className="logo" aria-label={brandName + ' home'}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/brand/logo-nav.webp" alt={brandName} width={480} height={255} />
+          <img src="/brand/logo-nav.webp" alt={brandName} width={480} height={210} />
         </Link>
         <nav className="nav-links">
           {LINKS.map((l) => (

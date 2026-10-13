@@ -1,7 +1,7 @@
 import './admin.css';
 
 export const metadata = {
-  title: 'Admin · LazyDev',
+  title: 'Admin · Khushii Labs',
   robots: { index: false, follow: false },
   icons: { icon: '/brand/icon.png' },
 };
