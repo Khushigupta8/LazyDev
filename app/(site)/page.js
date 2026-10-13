@@ -9,7 +9,7 @@ import { Divider, Laurel, Sparkle, Sprig } from '@/components/Ornament';
 
 const STEPS = [
   { title: 'Discover', text: 'A relaxed call about your business, goals and budget. You get a fixed quote within 24 hours.' },
-  { title: 'Design', text: 'I design your pages in Figma and refine them with you until they feel exactly right.' },
+  { title: 'Design', text: 'I design every page around your brand and refine it with you until it feels exactly right.' },
   { title: 'Develop', text: 'Clean, fast code that looks beautiful on every screen and is ready for Google from day one.' },
   { title: 'Launch', text: 'Your site goes live, I show you how to edit it, and I stay on hand whenever you need me.' },
 ];

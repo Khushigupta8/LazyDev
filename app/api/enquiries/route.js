@@ -1,5 +1,6 @@
-import { NextResponse } from 'next/server';
-import { updateDb, uid, now, str } from '@/lib/db';
+import { NextResponse, after } from 'next/server';
+import { updateDb, readDb, uid, now, str } from '@/lib/db';
+import { sendEnquiryEmails } from '@/lib/email';
 import { rateLimited, clientIp } from '@/lib/auth';
 
 export async function POST(request) {
@@ -30,5 +31,9 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Please enter a valid email address.' }, { status: 400 });
   }
   await updateDb((db) => db.enquiries.unshift(enquiry));
+
+  // Send the thank-you and "new enquiry" emails after responding, so the form stays fast
+  const siteUrl = process.env.SITE_URL || new URL(request.url).origin;
+  after(async () => sendEnquiryEmails(enquiry, (await readDb()).settings, siteUrl));
   return NextResponse.json({ ok: true });
 }
