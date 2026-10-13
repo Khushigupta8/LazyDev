@@ -13,7 +13,7 @@ export const POST = adminOnly(async (request) => {
   }
   const db = await updateDb((d) => {
     const { salt, hash } = hashPassword(String(next));
-    d.admin = { username: str(username, 60) || d.admin.username, salt, hash, isDefault: false };
+    d.admin = { ...d.admin, username: str(username, 60) || d.admin.username, salt, hash, isDefault: false };
     return d;
   });
   // Old sessions are now invalid; issue a fresh one for this browser.
