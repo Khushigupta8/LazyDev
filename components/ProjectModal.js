@@ -6,7 +6,8 @@ import Icon from './Icon';
 export function ProjectShot({ project, index = 0 }) {
   if (project.image) {
     // eslint-disable-next-line @next/next/no-img-element
-    return <img src={project.image} alt={project.title} loading="lazy" draggable={false} />;
+    const alt = `${project.title} website${project.category ? ` (${project.category})` : ''}: homepage screenshot`;
+    return <img src={project.image} alt={alt} width={1198} height={674} loading="lazy" decoding="async" draggable={false} />;
   }
   return (
     <div className={'shot-placeholder tone-' + (index % 4)}>

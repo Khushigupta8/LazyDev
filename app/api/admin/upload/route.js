@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import sharp from 'sharp';
 import { put } from '@vercel/blob';
 import { uid } from '@/lib/db';
 import { adminOnly } from '@/lib/auth';
@@ -18,17 +19,24 @@ export const POST = adminOnly(async (request) => {
   if (file.size > MAX_BYTES) {
     return NextResponse.json({ error: 'Image must be under 4 MB' }, { status: 400 });
   }
-  const name = Date.now() + '-' + uid() + TYPES[file.type];
+  // PNG / JPG are converted to WebP (smaller, faster pages). GIFs keep their animation.
+  let body = Buffer.from(await file.arrayBuffer());
+  let type = file.type;
+  if (type === 'image/png' || type === 'image/jpeg') {
+    body = await sharp(body).rotate().resize({ width: 1600, withoutEnlargement: true }).webp({ quality: 80 }).toBuffer();
+    type = 'image/webp';
+  }
+  const name = Date.now() + '-' + uid() + TYPES[type];
 
   // On Vercel: store in Vercel Blob (permanent public URL)
   if (useBlob) {
-    const blob = await put('uploads/' + name, file, { access: 'public', contentType: file.type });
+    const blob = await put('uploads/' + name, body, { access: 'public', contentType: type });
     return NextResponse.json({ url: blob.url });
   }
 
   // Locally: save into /public/uploads
   const dir = path.join(process.cwd(), 'public', 'uploads');
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, name), Buffer.from(await file.arrayBuffer()));
+  fs.writeFileSync(path.join(dir, name), body);
   return NextResponse.json({ url: '/uploads/' + name });
 });

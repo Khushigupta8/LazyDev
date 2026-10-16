@@ -2,7 +2,7 @@
   "settings": {
     "ownerName": "Khushi Gupta",
     "ownerRole": "Web Designer & Developer",
-    "photo": "/uploads/khushi-professional.jpg",
+    "photo": "/uploads/khushi-professional.webp",
     "quote": "Design is not just what it looks like. It is how it makes your customers feel.",
     "highlights": [
       {
@@ -119,14 +119,15 @@
     {
       "id": "6175d52d075d4d6f",
       "title": "Graphic Design",
-      "tag": "Coming soon",
+      "tag": "Design",
       "icon": "pen",
-      "status": "coming-soon",
+      "status": "active",
       "order": 5,
-      "description": "Logos, brand kits and scroll-stopping social creatives.",
+      "description": "Logos, flyers, brochures, business cards and scroll-stopping social media posts that make your brand instantly recognisable.",
       "features": [
-        "Logo & identity",
-        "Social kits"
+        "Logos & brand identity",
+        "Flyers & brochures",
+        "Social media posts"
       ],
       "price": ""
     },
@@ -136,11 +137,26 @@
       "tag": "Coming soon",
       "icon": "megaphone",
       "status": "coming-soon",
-      "order": 6,
+      "order": 7,
       "description": "SEO, ads and social growth to bring the right people to your site.",
       "features": [
         "SEO",
         "Meta & Google Ads"
+      ],
+      "price": ""
+    },
+    {
+      "id": "d358070de1623922",
+      "title": "Content Writing",
+      "tag": "Writing",
+      "icon": "edit",
+      "status": "active",
+      "order": 6,
+      "description": "Clear, persuasive website copy, blogs and product descriptions written to connect with your customers and rank on Google.",
+      "features": [
+        "Website copy",
+        "SEO blogs",
+        "Product descriptions"
       ],
       "price": ""
     }
@@ -156,7 +172,7 @@
       "title": "Dealer Review",
       "category": "Full Stack / Custom",
       "url": "https://www.ddautomanagement.com/",
-      "image": "/uploads/work-dealer-review.jpg",
+      "image": "/uploads/work-dealer-review.webp",
       "featured": true,
       "description": "An invitation-only vehicle assessment platform for car dealerships. Dealers submit vehicle details, photos and a condition rating through a private portal, and the review team returns a recommended listing price with a branded report. Includes a dealership workspace that tracks every submission, plus membership and billing.",
       "tags": [
@@ -175,7 +191,7 @@
       "title": "Centauri Renewables",
       "category": "Full Stack / Custom",
       "url": "https://centauri-renewables.com/",
-      "image": "/uploads/work-centauri.jpg",
+      "image": "/uploads/work-centauri.webp",
       "featured": false,
       "description": "Corporate website for a U.S. renewable energy company working on selenium solar technology, battery storage and AI-driven energy systems, with a project map, governance pages and dedicated investor and partnership sections.",
       "tags": [
@@ -194,7 +210,7 @@
       "title": "New Leaf Listings",
       "category": "Full Stack / Custom",
       "url": "https://nlvlistings.com/",
-      "image": "/uploads/work-new-leaf-listings.jpg",
+      "image": "/uploads/work-new-leaf-listings.webp",
       "featured": false,
       "description": "A premium real estate platform built for elite brokerages: curated property listings, map search, pricing plans for realtors, agent contact and a built-in chat assistant.",
       "tags": [
@@ -213,7 +229,7 @@
       "title": "FormFit",
       "category": "Full Stack / Custom",
       "url": "https://formfit.in/",
-      "image": "/uploads/work-formfit.jpg",
+      "image": "/uploads/work-formfit.webp",
       "featured": false,
       "description": "A free fitness platform with 18 calculators (calories, BMI, body fat, macros, one-rep max and more), alongside workout plans, an exercise library and research-based guides. Every calculation runs privately in the browser, with no sign-up.",
       "tags": [
@@ -232,7 +248,7 @@
       "title": "JRICO Entertainment",
       "category": "WordPress",
       "url": "https://darkorange-bear-997132.hostingersite.com/",
-      "image": "/uploads/work-jrico.jpg",
+      "image": "/uploads/work-jrico.webp",
       "featured": true,
       "description": "Website for a New Orleans and Metairie DJ company, with services, packages, a gallery and an online booking and quote flow for weddings, corporate events and private parties.",
       "tags": [
@@ -251,7 +267,7 @@
       "title": "The Beneficial Knowledge Group",
       "category": "WordPress",
       "url": "https://linen-gerbil-492154.hostingersite.com/",
-      "image": "/uploads/work-bkg.jpg",
+      "image": "/uploads/work-bkg.webp",
       "featured": false,
       "description": "Website for a Massachusetts consulting, professional training and staffing firm, with service pages, online courses, a member dashboard and multilingual support.",
       "tags": [
@@ -270,7 +286,7 @@
       "title": "Blackburn Hawks",
       "category": "WordPress",
       "url": "https://bisque-falcon-806636.hostingersite.com/",
-      "image": "/uploads/work-blackburn-hawks.jpg",
+      "image": "/uploads/work-blackburn-hawks.webp",
       "featured": true,
       "description": "Official website for an English ice hockey club: season tickets, away-travel seats, fixtures with a live countdown, team news, sponsorship packages and a club shop on the way.",
       "tags": [
@@ -290,7 +306,7 @@
       "title": "Nothing",
       "client": "Nothing",
       "url": "https://nothing.tech/",
-      "image": "/uploads/work-nothing.jpg",
+      "image": "/uploads/work-nothing.webp",
       "description": "Agency project, worked on with the Digital Heroes team. E-commerce and brand website for Nothing, the London-based consumer tech company: product launches, online store and seasonal offers.",
       "tags": [
         "E-commerce",
@@ -308,7 +324,7 @@
       "title": "Graza",
       "client": "Graza",
       "url": "https://www.graza.co/",
-      "image": "/uploads/work-graza.jpg",
+      "image": "/uploads/work-graza.webp",
       "description": "Agency project, worked on with the Digital Heroes team. Direct-to-consumer store for Graza, the olive oil brand: shop, refills and brand storytelling.",
       "tags": [
         "DTC store",
@@ -326,7 +342,7 @@
       "title": "Jacquemus",
       "client": "Jacquemus",
       "url": "https://www.jacquemus.com/en_in",
-      "image": "/uploads/work-jacquemus.jpg",
+      "image": "/uploads/work-jacquemus.webp",
       "description": "Agency project, worked on with the Digital Heroes team. Online store for the French fashion house Jacquemus: collections, bags and campaign-led editorial.",
       "tags": [
         "Fashion e-commerce",
@@ -344,7 +360,7 @@
       "title": "The Modern House",
       "client": "The Modern House",
       "url": "https://themodernhouse.com/",
-      "image": "/uploads/work-modern-house.jpg",
+      "image": "/uploads/work-modern-house.webp",
       "description": "Agency project, worked on with the Digital Heroes team. Website for The Modern House, the UK estate agency for design-led homes: sales listings, journal and property alerts.",
       "tags": [
         "Real estate",
@@ -362,7 +378,7 @@
       "title": "noma",
       "client": "noma",
       "url": "https://noma.dk/",
-      "image": "/uploads/work-noma.jpg",
+      "image": "/uploads/work-noma.webp",
       "description": "Agency project, worked on with the Digital Heroes team. Website for noma in Copenhagen: reservations, bilingual English/Danish content and newsletter sign-up.",
       "tags": [
         "WordPress",
@@ -380,7 +396,7 @@
       "title": "The Noguchi Museum",
       "client": "The Noguchi Museum",
       "url": "https://www.noguchi.org/",
-      "image": "/uploads/work-noguchi.jpg",
+      "image": "/uploads/work-noguchi.webp",
       "description": "Agency project, worked on with the Digital Heroes team. Website for The Noguchi Museum in New York: visitor information, artworks, Akari & Shop, in English and Japanese.",
       "tags": [
         "WordPress",
@@ -398,7 +414,7 @@
       "title": "Around The Blue",
       "client": "AroundTheBlue",
       "url": "https://aroundtheblue.org/it/",
-      "image": "/uploads/work-around-the-blue.jpg",
+      "image": "/uploads/work-around-the-blue.webp",
       "description": "Agency project, worked on with the Digital Heroes team. Expedition website for Giovanni Soldini's AroundTheBlue voyage: 21 stages across seven seas, ocean stories, the mission and partners.",
       "tags": [
         "WordPress",

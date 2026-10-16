@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import Icon from './Icon';
 
@@ -113,6 +114,9 @@ export default function EnquiryForm({ services }) {
       <button className="btn btn-primary btn-block" disabled={state === 'sending'}>
         {state === 'sending' ? 'Sending…' : 'Send enquiry'} <Icon name="arrow" size={18} />
       </button>
+      <p className="form-legal">
+        Your details are only used to reply to your enquiry. See the <Link href="/privacy-policy">privacy policy</Link>.
+      </p>
       {error && (
         <p className="form-error" role="alert">
           {error}

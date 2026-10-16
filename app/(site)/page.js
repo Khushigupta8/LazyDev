@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { connection } from 'next/server';
 import { getSiteData } from '@/lib/db';
+import { pageMeta } from '@/lib/site';
 import Icon from '@/components/Icon';
 import Portrait from '@/components/Portrait';
 import WorkGrid from '@/components/WorkGrid';
@@ -21,6 +22,16 @@ const FAQS = [
   ['Do you handle hosting, domains and maintenance?', 'I can set up hosting and your domain, and offer monthly care plans for updates, backups and small changes.'],
   ['Do you offer graphic design and marketing?', 'Graphic design and digital marketing are launching soon, so you’ll be able to get everything in one place.'],
 ];
+
+export async function generateMetadata() {
+  await connection();
+  const { settings } = await getSiteData();
+  return pageMeta({
+    settings,
+    path: '/',
+    description: `${settings.brandName} designs and builds fast, beautiful, SEO-ready websites for brands and small businesses. Custom builds, WordPress sites, online stores, graphic design and content writing, with a fixed quote after a short call.`,
+  });
+}
 
 export default async function HomePage() {
   await connection();
@@ -51,7 +62,10 @@ export default async function HomePage() {
             </span>
           </div>
 
-          <h1 className="hero-word" aria-label={settings.heroWord}>
+          <h1 className="hero-word">
+            <span className="sr-only">
+              {settings.brandName}: {String(settings.heroWord || 'websites').toLowerCase()} designed and developed by {settings.ownerName}
+            </span>
             {[...String(settings.heroWord)].map((ch, i) => (
               <span key={i} style={{ animationDelay: 0.1 + i * 0.07 + 's' }} aria-hidden="true">
                 {ch === ' ' ? ' ' : ch}
@@ -77,7 +91,7 @@ export default async function HomePage() {
             </div>
             <div className="hero-photo">
               <Sprig className="sprig-hero" />
-              <Portrait photo={settings.photo} name={settings.ownerName} />
+              <Portrait photo={settings.photo} name={settings.ownerName} role={settings.ownerRole} priority />
             </div>
           </div>
         </div>
@@ -132,7 +146,8 @@ export default async function HomePage() {
               ))}
             </ul>
             <p className="svc-note">
-              Pricing depends on the kind of website you want. Share your idea and you&apos;ll get a fixed quote after a short call.
+              Pricing depends on the kind of project you want. <Link href="#contact">Share your idea</Link> and you&apos;ll get a fixed quote
+              after a short call, or <Link href="/work">browse the portfolio</Link> to see past projects.
             </p>
           </div>
 
@@ -214,7 +229,7 @@ export default async function HomePage() {
       <section className="contact" id="contact">
         <div className="container">
           <div className="contact-top">
-            <Portrait photo={settings.photo} name={settings.ownerName} className="round" />
+            <Portrait photo={settings.photo} name={settings.ownerName} role={settings.ownerRole} className="round" />
             <div className="contact-info reveal">
               <h2 className="band-title left">Let&apos;s create something extraordinary</h2>
               <ul className="contact-list">

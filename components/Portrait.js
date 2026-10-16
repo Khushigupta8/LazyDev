@@ -1,5 +1,8 @@
-/** The owner's photo inside an arch, or an elegant monogram until a photo is uploaded. */
-export default function Portrait({ photo, name, className = '' }) {
+/**
+ * The owner's photo inside an arch, or an elegant monogram until a photo is uploaded.
+ * `priority` for the above-the-fold hero copy; every other copy lazy-loads.
+ */
+export default function Portrait({ photo, name, role, className = '', priority = false }) {
   const initials = String(name || '')
     .split(' ')
     .filter(Boolean)
@@ -12,7 +15,16 @@ export default function Portrait({ photo, name, className = '' }) {
       {photo ? (
         <div className="portrait-frame">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={photo} alt={name} className="portrait-img" />
+          <img
+            src={photo}
+            alt={[name, role].filter(Boolean).join(', ')}
+            className="portrait-img"
+            width={760}
+            height={988}
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : undefined}
+            decoding="async"
+          />
         </div>
       ) : (
         <div className="portrait-empty">

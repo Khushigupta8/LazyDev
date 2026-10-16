@@ -40,6 +40,7 @@ export default function Footer({ settings, projects = [] }) {
             <Link href="/#services">Services</Link>
             <Link href="/work">Portfolio</Link>
             <Link href="/#contact">Contact</Link>
+            <Link href="/privacy-policy">Privacy</Link>
           </nav>
           {socials.length > 0 ? (
             <div className="socials">
