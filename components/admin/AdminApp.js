@@ -6,6 +6,7 @@ import { Divider } from '../Ornament';
 import Dashboard from './Dashboard';
 import Enquiries from './Enquiries';
 import Projects from './Projects';
+import Reviews from './Reviews';
 import Services from './Services';
 import Settings from './Settings';
 import { api, ToastHost, toast } from './shared';
@@ -15,6 +16,7 @@ const TABS = [
   { id: 'enquiries', label: 'Enquiries', icon: 'inbox' },
   { id: 'projects', label: 'Portfolio', icon: 'briefcase' },
   { id: 'services', label: 'Services', icon: 'sparkle' },
+  { id: 'reviews', label: 'Reviews', icon: 'star' },
   { id: 'settings', label: 'Settings', icon: 'settings' },
 ];
 
@@ -65,7 +67,7 @@ function Login({ onDone }) {
 export default function AdminApp() {
   const [me, setMe] = useState(null); // null = loading, false = logged out
   const [tab, setTab] = useState('dashboard');
-  const [newCount, setNewCount] = useState(0);
+  const [counts, setCounts] = useState({});
   const [menuOpen, setMenuOpen] = useState(false);
 
   const loadMe = useCallback(async () => {
@@ -79,7 +81,7 @@ export default function AdminApp() {
   const refreshCount = useCallback(async () => {
     try {
       const s = await api('/api/admin/stats');
-      setNewCount(s.newEnquiries);
+      setCounts({ enquiries: s.newEnquiries, reviews: s.pendingReviews });
     } catch {}
   }, []);
 
@@ -115,7 +117,7 @@ export default function AdminApp() {
   if (me === null) return <div className="adm-loading"><span className="adm-spinner" /></div>;
   if (me === false) return (<><Login onDone={loadMe} /><ToastHost /></>);
 
-  const Panel = { dashboard: Dashboard, enquiries: Enquiries, projects: Projects, services: Services, settings: Settings }[tab];
+  const Panel = { dashboard: Dashboard, enquiries: Enquiries, projects: Projects, services: Services, reviews: Reviews, settings: Settings }[tab];
 
   return (
     <div className={'adm' + (menuOpen ? ' menu-open' : '')}>
@@ -130,7 +132,7 @@ export default function AdminApp() {
             <button key={t.id} className={tab === t.id ? 'active' : ''} onClick={() => go(t.id)}>
               <Icon name={t.icon} size={19} />
               <span>{t.label}</span>
-              {t.id === 'enquiries' && newCount > 0 && <em className="adm-badge">{newCount}</em>}
+              {counts[t.id] > 0 && <em className="adm-badge">{counts[t.id]}</em>}
             </button>
           ))}
         </nav>

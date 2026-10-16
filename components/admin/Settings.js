@@ -53,7 +53,7 @@ export default function Settings({ onAccountChange }) {
 
   useEffect(() => {
     api('/api/admin/settings')
-      .then((d) => setS({ ...d, highlights: [...(d.highlights || []), ...Array(4).fill({ title: '', text: '' })].slice(0, 4) }))
+      .then((d) => setS({ ...d, highlights: [...(d.highlights || []), ...Array(8).fill({ title: '', text: '' })].slice(0, 8) }))
       .catch((e) => toast(e.message, 'error'));
   }, []);
 
@@ -117,7 +117,7 @@ export default function Settings({ onAccountChange }) {
           <header className="adm-card-head">
             <div>
               <h3>Highlights</h3>
-              <p className="adm-muted">Up to 4 reasons to choose you, shown next to your services. Only list things that are true.</p>
+              <p className="adm-muted">Up to 8 reasons to choose you, shown next to your services. Only list things that are true.</p>
             </div>
           </header>
           <div className="adm-stats-edit">

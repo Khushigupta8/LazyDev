@@ -199,6 +199,17 @@
 .adm-svc-price { color: var(--rose); font-size: 0.8rem; letter-spacing: 0.08em; white-space: nowrap; }
 .adm-svc-list select { padding: 9px 10px !important; font-size: 0.85rem !important; }
 
+/* ---------- reviews ---------- */
+.adm-reviews { list-style: none; margin: 0; padding: 0; }
+.adm-reviews li { display: grid; gap: 10px; padding: 22px; border-bottom: 1px solid var(--a-line-soft); }
+.adm-reviews li:last-child { border-bottom: 0; }
+.adm-review-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; }
+.adm-review-head strong { display: block; font-weight: 500; color: var(--wine); }
+.adm-review-head span:not(.adm-pill) { color: var(--a-muted); font-size: 0.8rem; word-break: break-word; }
+.adm-stars { color: var(--rose); letter-spacing: 0.12em; }
+.adm-stars i { font-style: normal; opacity: 0.3; }
+.adm-review-text { margin: 0; white-space: pre-wrap; line-height: 1.7; }
+
 /* ---------- toasts ---------- */
 .adm-toasts { position: fixed; right: 20px; bottom: 20px; z-index: 300; display: grid; gap: 8px; }
 .adm-toast { display: flex; align-items: center; gap: 10px; padding: 13px 18px; background: var(--wine); color: var(--cream-2); font-size: 0.86rem; box-shadow: 0 16px 40px -12px rgba(54, 13, 23, 0.6); animation: rise 0.3s; }

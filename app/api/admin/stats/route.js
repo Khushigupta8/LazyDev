@@ -15,6 +15,7 @@ export const GET = adminOnly(async () => {
     thisWeek: e.filter((x) => new Date(x.createdAt).getTime() > weekAgo).length,
     projects: db.projects.length,
     services: db.services.filter((s) => s.status === 'active').length,
+    pendingReviews: db.reviews.filter((r) => r.status === 'pending').length,
     recent: e.slice(0, 5),
   });
 });

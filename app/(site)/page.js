@@ -6,6 +6,7 @@ import Icon from '@/components/Icon';
 import Portrait from '@/components/Portrait';
 import WorkGrid from '@/components/WorkGrid';
 import EnquiryForm from '@/components/EnquiryForm';
+import ReviewForm from '@/components/ReviewForm';
 import { Divider, Laurel, Sparkle, Sprig } from '@/components/Ornament';
 
 const STEPS = [
@@ -20,7 +21,7 @@ const FAQS = [
   ['How long does it take?', 'Most business websites launch in two to three weeks. Online stores and larger projects usually take four to eight.'],
   ['Can I update the website myself?', 'Yes. I build on easy-to-use platforms or include a simple admin panel, and walk you through it before handover.'],
   ['Do you handle hosting, domains and maintenance?', 'I can set up hosting and your domain, and offer monthly care plans for updates, backups and small changes.'],
-  ['Do you offer graphic design and marketing?', 'Graphic design and digital marketing are launching soon, so you’ll be able to get everything in one place.'],
+  ['Do you offer graphic design and content writing?', 'Yes. Alongside websites I design logos, flyers, brochures and social media posts, and write website copy, blogs and product descriptions, so you get everything in one place. Digital marketing is launching soon.'],
 ];
 
 export async function generateMetadata() {
@@ -35,7 +36,7 @@ export async function generateMetadata() {
 
 export default async function HomePage() {
   await connection();
-  const { settings, services, projects } = await getSiteData();
+  const { settings, services, projects, reviews } = await getSiteData();
   const active = services.filter((s) => s.status === 'active');
   const soon = services.filter((s) => s.status === 'coming-soon');
   const highlights = (settings.highlights || []).filter((h) => h.title);
@@ -205,6 +206,37 @@ export default async function HomePage() {
               </li>
             ))}
           </ol>
+        </div>
+      </section>
+
+      {/* ================= REVIEWS ================= */}
+      <section className="band reviews" id="reviews">
+        <div className="container">
+          <h2 className="band-title reveal">
+            <Sparkle size={10} /> Kind words <Sparkle size={10} />
+          </h2>
+          {reviews.length > 0 ? (
+            <ul className="review-grid">
+              {reviews.map((r, i) => (
+                <li key={r.id} className="review-card reveal" style={{ transitionDelay: (i % 3) * 90 + 'ms' }}>
+                  <span className="review-stars" aria-label={`${r.rating} out of 5 stars`}>
+                    {'★'.repeat(r.rating)}
+                    <i>{'★'.repeat(5 - r.rating)}</i>
+                  </span>
+                  <blockquote>{r.message}</blockquote>
+                  <p className="review-by">
+                    <strong>{r.name}</strong>
+                    {(r.role || r.service) && <small>{[r.role, r.service].filter(Boolean).join(' · ')}</small>}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="review-empty reveal">No reviews yet. If we&apos;ve worked together, be the first to share your experience.</p>
+          )}
+          <div className="reveal">
+            <ReviewForm services={active} />
+          </div>
         </div>
       </section>
 

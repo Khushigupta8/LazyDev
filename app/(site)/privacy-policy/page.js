@@ -46,6 +46,11 @@ export default async function PrivacyPolicyPage() {
               number, brand or company, the service, website type and timeline you are interested in).
             </li>
             <li>
+              <strong>Review form:</strong> your name, email address, rating and review, plus your role or company and the service you
+              received if you add them. Once approved, your name, role, service, rating and review are shown publicly on this website.
+              Your email address is never shown and is only used to confirm the review is genuine.
+            </li>
+            <li>
               <strong>Usage data:</strong> if analytics is enabled, Google Analytics collects pages visited, approximate location, device and
               browser details through cookies. Our hosting provider also keeps short-lived server logs (such as IP address) for security.
             </li>

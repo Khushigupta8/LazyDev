@@ -147,7 +147,7 @@ p { margin: 0 0 1em; }
 .band-title.left { justify-content: flex-start; margin-bottom: 28px; font: 400 clamp(1.4rem, 2.6vw, 2.2rem)/1.2 var(--font-display); letter-spacing: 0.14em; color: var(--cream-2); }
 .band-foot { margin-top: 46px; text-align: center; }
 
-.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 380px)); justify-content: center; gap: 26px; }
 .work-card { position: relative; text-align: center; }
 .work-open { display: block; width: 100%; padding: 0; border: 0; background: none; color: inherit; text-align: center; cursor: pointer; font: inherit; }
 .work-visit { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; padding-bottom: 2px; border-bottom: 1px solid currentColor; font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rose-light); transition: opacity 0.2s; }
@@ -249,6 +249,30 @@ p { margin: 0 0 1em; }
 .form-success p { color: var(--rose-light); }
 .form-success .btn-ghost { border-color: var(--rose-light); color: var(--cream-2); }
 .success-icon { width: 70px; height: 70px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--rose-light); color: var(--rose-light); animation: photoIn 0.8s var(--ease) both; }
+
+/* ---------------- Reviews (wine band) ---------------- */
+.reviews { padding: 90px 0; }
+.review-grid { list-style: none; margin: 0 0 56px; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 380px)); justify-content: center; gap: 26px; }
+.review-card { display: flex; flex-direction: column; gap: 16px; padding: 30px 28px; border: 1px solid var(--line-light); }
+.review-stars { color: var(--rose-light); letter-spacing: 0.14em; }
+.review-stars i { font-style: normal; opacity: 0.3; }
+.review-card blockquote { flex: 1; margin: 0; font: 400 1.15rem/1.55 var(--font-display); letter-spacing: 0.02em; white-space: pre-line; }
+.review-by { margin: 0; display: grid; gap: 2px; }
+.review-by strong { font: 400 1.7rem/1.2 var(--font-script); color: var(--rose-light); }
+.review-by small { font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rose-light); opacity: 0.8; }
+.review-empty { max-width: 520px; margin: 0 auto 40px; text-align: center; color: var(--rose-light); }
+.review-cta { display: grid; justify-items: center; gap: 18px; text-align: center; }
+.review-cta p { margin: 0; color: var(--rose-light); }
+.btn-light { border-color: var(--rose-light); color: var(--cream-2); background: transparent; }
+.btn-light:hover { background: var(--cream-2); border-color: var(--cream-2); color: var(--wine); }
+.review-form { padding-top: 10px; }
+.star-pick { margin: 0; padding: 0; border: 0; display: grid; justify-items: center; gap: 6px; }
+.star-pick legend { margin: 0 auto 6px; font-size: 0.64rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rose-light); }
+.star-pick div { display: flex; align-items: center; gap: 4px; }
+.star-pick button { padding: 0 3px; border: 0; background: none; font-size: 1.9rem; line-height: 1; color: var(--rose-light); opacity: 0.3; cursor: pointer; transition: opacity 0.2s, transform 0.2s; }
+.star-pick button.on { opacity: 1; }
+.star-pick button:hover { transform: scale(1.12); }
+.star-pick span { min-width: 80px; margin-left: 10px; font: 400 1.4rem var(--font-script); color: var(--rose-light); }
 
 /* ---------------- Page hero (portfolio) ---------------- */
 .page-hero { padding: 150px 0 60px; text-align: center; }
